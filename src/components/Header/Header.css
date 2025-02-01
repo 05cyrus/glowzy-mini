@@ -20,14 +20,14 @@ h4{
     padding: 0;
     text-align: left;
     font-size: 1.5rem;
-    padding-top: 1%;
+    padding-left: 2%;
 }
 p{
     margin: 0;
     padding: 0;
     text-align: bottom;
     font-size: 1.5rem;
-    padding-top: 15%;
+    padding-top: 16%;
     margin-left: 2%;
 }
 .btn-pos {
@@ -216,4 +216,71 @@ p{
     font-size: 1.5rem;
     color: transparent;
   }
+  @media (max-width: 768px) {
+    .header h1 {
+        font-size: 5rem;
+        padding-top: 5%;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding-top: 10%;
+    }
+
+    .btn-pos {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header h1 {
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 40%;
+        padding-right: 10%;
+    }
+
+    h4 {
+        padding-top: 4px;
+        font-size: .6rem;
+        padding-left: 25%;
+    }
+
+    p {
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 0; 
+        right: 0; 
+        margin: 1rem; 
+    }
+
+    .button {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.4rem;
+    }
+    .button .text_button{
+        font-size: 1rem;
+    }
+    .btn-pos {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 10rem;
+    }
+}
   
