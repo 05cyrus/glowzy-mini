@@ -1,0 +1,110 @@
+    .l-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .l-box {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .l-progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .l-progress {
+    height: 100%;
+    background: linear-gradient(to right, purple, blue);
+    transition: width 0.3s ease;
+  }
+  
+  .l-progress-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .l-loading-text {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .l-email-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+  }
+  
+  .l-email-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: linear-gradient(to right, purple, blue);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .l-success-message {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .l-success-message button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #444;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+/* Apply styles ONLY when Loader is active */
+.loader-active {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-active body {
+    overflow: hidden; /* Prevents scrolling issues */
+}
+
+.loader-active .l-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reset styles when Loader is not active */
+.app-container:not(.loader-active) .l-container {
+    height: auto;
+    background: transparent;
+    display: block;
+}
