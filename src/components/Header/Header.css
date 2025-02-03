@@ -21,7 +21,7 @@ h4{
   font-size: 1.5rem;
   padding-left: 2%;
 }
-p{
+.header p{
   margin: 0;
   padding: 0;
   text-align: bottom;
@@ -257,7 +257,7 @@ p{
       padding-left: 25%;
   }
 
-  p {
+  .header p {
       font-size: 0.8rem;
       position: absolute;
       bottom: 0; 

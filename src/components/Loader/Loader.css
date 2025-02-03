@@ -1,4 +1,4 @@
-/* Loader.css – Updated with OtherProject’s style (converted from Tailwind) */
+
 
 /* ===========================================
    Global Container (was .l-container)
@@ -19,9 +19,10 @@
      =========================================== */
   .l-box {
     position: relative;
-    background-color: #111827; /* Tailwind gray-900 */
-    border: 1px solid #1f2937; /* Tailwind gray-800 */
-    border-radius: 1rem;
+    border: 2px solid;
+    border-image-source: linear-gradient(135deg, #00FFFF, #FF00FF);
+    border-image-slice: 1;
+    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.5);
     padding: 2rem;
     width: 100%;
     max-width: 28rem; /* approx. max-w-md */
@@ -195,6 +196,42 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  @media (max-width: 480px) {
+    .l-box {
+      padding: 1rem;        /* Reduce padding for better spacing */
+      max-width: 90%;
+      min-height: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end; /* Keep elements centered */
+    }
+  
+    .l-progress-bar {
+      margin-bottom: 1rem;  /* Adjust spacing for mobile */
+    }
+  
+    .l-progress-text {
+      font-size: 1rem;       /* Keep text visible and aligned */
+      margin-top: 0.5rem;    /* Adjust spacing */
+      text-align: center;
+      margin-top: 0;
+    }
+  
+    .l-loading-text {
+      font-size: 0.9rem;     /* Ensure readability */
+    }
+  
+    .l-email-form input,
+    .l-email-form button {
+      padding: 0.5rem 0.75rem; /* Reduce padding for better fit */
+      font-size: 1rem;
+    }
+  
+    .l-success-message h2 {
+      font-size: 1.5rem;
     }
   }
   
