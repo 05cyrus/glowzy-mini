@@ -32,7 +32,7 @@ p{
 .btn-pos {
   display: flex;
   justify-content: flex-end;
-  padding-right: 11%; 
+  padding-right: 8%; 
   padding-top: 15%;
 }
 .button {
@@ -50,7 +50,7 @@ p{
 
   transform-origin: center;
 
-  padding: 1rem 2rem; 
+  padding: .8rem 1.4rem; 
   background-color: black;
 
   border: none;
@@ -58,7 +58,7 @@ p{
   transform: scale(calc(1 + (var(--active, 0) * 0.1)));
 
   transition: transform var(--transtion);
-  font-size: 1.1rem; 
+  font-size: .6rem; 
 }
 
 .button::before {
@@ -75,7 +75,7 @@ p{
   border-radius: var(--border_radius);
   box-shadow: inset 0 0.5px hsl(0, 0%, 100%), inset 0 -1px 2px 0 hsl(0, 0%, 0%),
     0px 4px 10px -4px hsla(0 0% 0% / calc(1 - var(--active, 0))),
-    0 0 0 calc(var(--active, 0) * 0.375rem) #6e23b4;
+    0 0 0 calc(var(--active, 0) * 0.375rem) #E10565;
 
   transition: all var(--transtion);
   z-index: 0;
@@ -90,14 +90,14 @@ p{
 
   width: 100%;
   height: 100%;
-  background-color: hsla(260 97% 61% / 0.75);
+  background-color: #E10565(260 97% 61% / 0.75);
   background-image: radial-gradient(
       at 51% 89%,
       hsla(266, 45%, 74%, 1) 0px,
       transparent 50%
     ),
-    radial-gradient(at 100% 100%, hsla(266, 36%, 60%, 1) 0px, transparent 50%),
-    radial-gradient(at 22% 91%, hsla(266, 36%, 60%, 1) 0px, transparent 50%);
+    radial-gradient(at 100% 100%, #E10565(266, 36%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 22% 91%, #E10565(266, 36%, 60%, 1) 0px, transparent 50%);
   background-position: top;
 
   opacity: var(--active, 0);
@@ -266,11 +266,11 @@ p{
   }
 
   .button {
-      padding: 0.3rem 0.8rem;
-      font-size: 0.4rem;
+      padding: 0.4rem 1rem;
+      font-size: 0.2rem;
   }
   .button .text_button{
-      font-size: 1rem;
+      font-size: .6rem;
   }
   .btn-pos {
       display: flex;
@@ -280,7 +280,13 @@ p{
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      padding-bottom: 10rem;
+      padding-bottom: 6rem;
+  }
+  .button .sparkle {
+    position: relative;
+    z-index: 10;
+  
+    width: 1.15rem;
   }
 }
 
